@@ -1,4 +1,4 @@
-const Person = require("../Person")
+const {Person} = require("../person")
 
 var paulo = new Person(
     "Paulo Gilberto da Silva",
