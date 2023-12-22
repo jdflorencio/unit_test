@@ -21,6 +21,15 @@ describe("Checking length of items fo array", () => {
     it("should check if the array does not contains the user Júlio", () => {
         expect(users).not.toContain("Júlio")
     })
+
+    /*
+        Nessa aula aprenderemos a utilizar a asserção arraycontaining, as qual nos permitirá comparar se um conjunto de elementos está contido em um determinado array.
+    */
+    it("should check if the array contains all the items in another array", () => {
+        let expectArray = ["José", "Maria", "Enya Agatha"] 
+
+        expect(users).toEqual(expect.arrayContaining(expectArray))
+    })
 })
 
 
